@@ -1,0 +1,17 @@
+{
+  "name": "c-users-marcos-desktop-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.9",
+    "astro": "^5.4.1",
+    "daisyui": "^5.0.0-beta.9",
+    "tailwindcss": "^4.0.9"
+  }
+}

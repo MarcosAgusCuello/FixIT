@@ -1,0 +1,61 @@
+---
+
+---
+
+<div class="hero py-6">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="card">
+            <h2 class="text-5xl text-center font-bold">SOBRE NOSOTROS</h2>
+            <p class="py-6">
+                Somos un emprendimiento que busca la mejor calidad de servicio
+                tecnico informatico en la localidad de bahia blanca. Dedicados a
+                ofrecer la solucion con la mayor transparencia, en el menor
+                tiempo posible y sin perder la calidad en el servicio.
+            </p>
+        </div>
+    </div>
+</div>
+
+<style>
+    p {
+        font-size: 17px;
+    }
+
+    .hero {
+        margin-top: 1%;
+    }
+
+    .card {
+        background: rgb(255, 255, 255);
+        padding: 4px;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    h2 {
+        background: linear-gradient(
+            90deg,
+            rgba(240, 240, 240, 1) 0%,
+            rgba(196, 196, 196, 1) 41%,
+            rgba(202, 186, 241, 1) 100%
+        );
+        background-size: 200% 100%; /* Aumentamos el tamaño para que el fondo pueda moverse */
+        animation: moverFondo 1.8s infinite alternate ease-in-out;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Animación pendular (ida y vuelta) */
+    @keyframes moverFondo {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+</style>

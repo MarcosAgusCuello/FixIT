@@ -19,8 +19,8 @@ if (isBuild) {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://FixIT.github.io',
-  base: '',
+  server: { port: SERVER_PORT},
+  site: BASE_URL,
     vite: {
         plugins: [tailwindcss()],
       },

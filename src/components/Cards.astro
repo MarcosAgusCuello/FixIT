@@ -308,42 +308,28 @@
           >
           <span>Seguridad</span>
         </li>
-        <!-- <li class="opacity-50">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="size-4 me-2 inline-block text-base-content/50"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            ><path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 13l4 4L19 7"></path></svg
-          >
-          <span class="line-through">Real-time collaboration tools</span>
-        </li> -->
       </ul>
     </div>
   </div>
-
+</section>
   <style>
     section {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 25rem;
+      height: 600px;
       width: auto;
-      margin-top: 2.5%;
+      margin-top: 2%;
+      margin-bottom: 2%;
     }
 
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
-      width: auto;
-      gap: 10rem;
+      height: 96%;
+      width: 100%;
+      gap: 4rem;
     }
 
     .card {
@@ -396,5 +382,72 @@
       );
       border-radius: 8px;
     }
+
+    /* Media Query para pantallas más pequeñas */
+  @media (max-width: 1024px) {
+    section {
+      
+      height: auto; /* Ajusta la altura de la sección en dispositivos más pequeños  */
+      margin-top: 0px;
+    }
+
+    .container {
+      flex-direction: column;
+      gap: 2rem; /* Reduce más el espacio entre las tarjetas  */
+      width: 350px;
+    }
+
+    .card, .card-medio {
+      width: 100%; /* Ajusta aún más el tamaño de las tarjetas */
+    }
+
+    span {
+      font-size: 16px;
+    } 
+  }
+
+  @media (max-width: 768px) {
+    section {
+      height: auto; /* Ajusta la altura de la sección en dispositivos más pequeños  */
+      margin-top: 0px;
+    }
+
+    .container {
+      gap: 2rem; /* Reduce más el espacio entre las tarjetas  */
+      width: 350px;
+    }
+
+    .card, .card-medio {
+      width: 100%; /* Ajusta aún más el tamaño de las tarjetas */
+    }
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    section {
+      height: auto; /* Ajusta la altura de la sección en dispositivos más pequeños  */
+      margin-top: 0px;
+    }
+
+    .container {
+      gap: 2rem; /* Reduce más el espacio entre las tarjetas  */
+      width: 350px;
+    }
+
+    .card, .card-medio {
+      width: 100%; /* Ajusta aún más el tamaño de las tarjetas */
+    }
+
+    .subtitulo {
+      font-size: 12px; /* Reduce el tamaño del texto en la sección de subtítulos */
+    }
+
+    span {
+      font-size: 16px;
+    }
+}
   </style>
-</section>
+
